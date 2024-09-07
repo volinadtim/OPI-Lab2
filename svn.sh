@@ -116,95 +116,95 @@ commit 16 blue
 svn switch $REPO_URL/branches/feat-4
 commit 17 blue
 
-# # 18
-# commit 18 blue
+# 18
+commit 18 blue
 
-# # 19
-# svn switch $REPO_URL/branches/feat-6
-# commit 19 blue
+# 19
+svn switch $REPO_URL/branches/feat-6
+commit 19 blue
 
-# # 20
-# commit 20 blue
+# 20
+commit 20 blue
 
-# # 21
-# svn switch $REPO_URL/branches/feat-4
-# svn merge "branches/feat-6"
-# commit 21 blue
+# 21
+svn switch $REPO_URL/branches/feat-4
+svn merge "branches/feat-6"
+commit 21 blue
 
-# # 22
-# set_user "red" "red@mail.com"
-# svn copy $REPO_URL/trunk $REPO_URL/branches/feat-22 -m "Create branch feat-22"
-# svn switch $REPO_URL/branches/feat-22
-# commit 22 red
+# 22
+set_user "red" "red@mail.com"
+svn copy $REPO_URL/trunk $REPO_URL/branches/feat-22 -m "Create branch feat-22"
+svn switch $REPO_URL/branches/feat-22
+commit 22 red
 
-# # 23
-# svn switch "trunk"
-# commit 23 red
+# 23
+svn switch "trunk"
+commit 23 red
 
-# # 24
-# set_user "blue" "blue@mail.com"
-# svn switch $REPO_URL/branches/feat-1
-# commit 24 blue
+# 24
+set_user "blue" "blue@mail.com"
+svn switch $REPO_URL/branches/feat-1
+commit 24 blue
 
-# # 25
-# svn switch $REPO_URL/branches/feat-16
-# commit 25 blue
+# 25
+svn switch $REPO_URL/branches/feat-16
+commit 25 blue
 
-# # 26
-# commit 26 blue
+# 26
+commit 26 blue
 
-# # 27
-# set_user "red" "red@mail.com"
-# svn switch "trunk"
-# svn merge "branches/feat-16"
-# commit 27 red
+# 27
+set_user "red" "red@mail.com"
+svn switch "trunk"
+svn merge "branches/feat-16"
+commit 27 red
 
-# # 28
-# set_user "blue" "blue@mail.com"
-# svn switch $REPO_URL/branches/feat-4
-# commit 28 blue
+# 28
+set_user "blue" "blue@mail.com"
+svn switch $REPO_URL/branches/feat-4
+commit 28 blue
 
-# # 29
-# set_user "red" "red@mail.com"
-# svn switch $REPO_URL/branches/feat-22
-# commit 29 red
+# 29
+set_user "red" "red@mail.com"
+svn switch $REPO_URL/branches/feat-22
+commit 29 red
 
-# # 30
-# set_user "blue" "blue@mail.com"
-# svn switch $REPO_URL/branches/feat-1
-# svn merge "branches/feat-22"
-# commit 30 blue
+# 30
+set_user "blue" "blue@mail.com"
+svn switch $REPO_URL/branches/feat-1
+svn merge "branches/feat-22"
+commit 30 blue
 
-# # 31
-# svn switch $REPO_URL/branches/feat-4
-# svn merge "branches/feat-1"
-# commit 31 blue
+# 31
+svn switch $REPO_URL/branches/feat-4
+svn merge "branches/feat-1"
+commit 31 blue
 
-# # 32
-# svn switch $REPO_URL/branches/feat-3
-# svn merge "branches/feat-4"
-# commit 32 blue
+# 32
+svn switch $REPO_URL/branches/feat-3
+svn merge "branches/feat-4"
+commit 32 blue
 
-# # 33
-# set_user "red" "red@mail.com"
-# svn switch "trunk"
-# commit 33 red
+# 33
+set_user "red" "red@mail.com"
+svn switch "trunk"
+commit 33 red
 
-# # 34
-# svn switch $REPO_URL/branches/feat-9
-# commit 34 red
+# 34
+svn switch $REPO_URL/branches/feat-9
+commit 34 red
 
-# # 35
-# set_user "blue" "blue@mail.com"
-# svn switch $REPO_URL/branches/feat-3
-# svn merge "branches/feat-9"
-# commit 35 blue
+# 35
+set_user "blue" "blue@mail.com"
+svn switch $REPO_URL/branches/feat-3
+svn merge "branches/feat-9"
+commit 35 blue
 
-# # 36
-# set_user "red" "red@mail.com"
-# svn switch "trunk"
-# svn merge "branches/feat-3"
-# commit 36 red
+# 36
+set_user "red" "red@mail.com"
+svn switch "trunk"
+svn merge "branches/feat-3"
+commit 36 red
 
 # Завершение
 svn log --verbose
