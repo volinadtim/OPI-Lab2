@@ -9,7 +9,7 @@ set_user() {
 # Функция для коммита
 commit() {
     rm -rf *
-    unzip -oq ./commits/commit"$1".zip -d .
+    unzip -oq ../commits/commit"$1".zip -d .
     svn add --force *
     svn commit -m "r$1"
 }
