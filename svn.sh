@@ -70,7 +70,7 @@ commit 7 red
 
 # 8
 set_user "red" "red@mail.com"
-svn switch "trunk"
+svn switch $REPO_URL/trunk
 commit 8 red
 
 # 9
@@ -128,7 +128,7 @@ commit 20 blue
 
 # 21
 svn switch $REPO_URL/branches/feat-4
-svn merge "branches/feat-6"
+svn merge $REPO_URL/branches/feat-6
 commit 21 blue
 
 # 22
@@ -138,7 +138,7 @@ svn switch $REPO_URL/branches/feat-22
 commit 22 red
 
 # 23
-svn switch "trunk"
+svn switch $REPO_URL/trunk
 commit 23 red
 
 # 24
@@ -155,8 +155,8 @@ commit 26 blue
 
 # 27
 set_user "red" "red@mail.com"
-svn switch "trunk"
-svn merge "branches/feat-16"
+svn switch $REPO_URL/trunk
+svn merge $REPO_URL/branches/feat-16
 commit 27 red
 
 # 28
@@ -172,22 +172,22 @@ commit 29 red
 # 30
 set_user "blue" "blue@mail.com"
 svn switch $REPO_URL/branches/feat-1
-svn merge "branches/feat-22"
+svn merge $REPO_URL/branches/feat-22
 commit 30 blue
 
 # 31
 svn switch $REPO_URL/branches/feat-4
-svn merge "branches/feat-1"
+svn merge $REPO_URL/branches/feat-1
 commit 31 blue
 
 # 32
 svn switch $REPO_URL/branches/feat-3
-svn merge "branches/feat-4"
+svn merge $REPO_URL/branches/feat-4
 commit 32 blue
 
 # 33
 set_user "red" "red@mail.com"
-svn switch "trunk"
+svn switch $REPO_URL/trunk
 commit 33 red
 
 # 34
@@ -197,13 +197,13 @@ commit 34 red
 # 35
 set_user "blue" "blue@mail.com"
 svn switch $REPO_URL/branches/feat-3
-svn merge "branches/feat-9"
+svn merge $REPO_URL/branches/feat-9
 commit 35 blue
 
 # 36
 set_user "red" "red@mail.com"
-svn switch "trunk"
-svn merge "branches/feat-3"
+svn switch $REPO_URL/trunk
+svn merge $REPO_URL/branches/feat-3
 commit 36 red
 
 # Завершение
