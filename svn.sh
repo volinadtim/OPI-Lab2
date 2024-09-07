@@ -9,14 +9,14 @@ set_user() {
 # Функция для коммита
 commit() {
     svn rm *
-    unzip -oq ../../commits/commit"$1".zip -d .
+    unzip -oq ../commits/commit"$1".zip -d .
     svn add --force *
     svn commit -m "r$1" --username=$2
 }
 
 # Инициализация репозитория
-mkdir svn
-cd svn
+# mkdir svn
+# cd svn
 rm -rf repo
 
 # Создание локального репозитория
