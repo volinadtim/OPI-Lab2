@@ -15,12 +15,20 @@ commit() {
 }
 
 # Инициализация репозитория
-rm -rf svn
+rm -rf repo
 # mkdir svn
 # cd svn
-svnadmin create svn
+svnadmin create repo
+REPO_URL="file://$(pwd)/repo"
+
+
+cd repo
+svn mkdir -m "project structure" $REPO_URL/trunk $REPO_URL/branches
+cd ..
+
+svn checkout $REPO_URL/trunk/ wc
+cd wc
 # svn checkout file://$(pwd)/svn svn
-cd svn
 # mkdir repo
 # svn add repo
 
