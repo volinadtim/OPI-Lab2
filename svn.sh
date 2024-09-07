@@ -11,7 +11,7 @@ commit() {
     rm -rf *
     svn rm *
     unzip -oq ../../commits/commit"$1".zip -d .
-    svn add *
+    svn add --force *
     svn commit -m "r$1" --username=$2
 }
 
