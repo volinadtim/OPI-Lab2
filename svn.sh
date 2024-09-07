@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Функция для настройки пользователя
+# Функция для настройки пользователя, не получилась
 set_user() {
     # svn propset svn:author "$1" . --force
     # svn propset svn:email "$2" . --force
@@ -8,7 +8,6 @@ set_user() {
 
 # Функция для коммита
 commit() {
-    rm -rf *
     svn rm *
     unzip -oq ../../commits/commit"$1".zip -d .
     svn add --force *
@@ -19,19 +18,19 @@ commit() {
 mkdir svn
 cd svn
 rm -rf repo
+
+# Создание локального репозитория
 svnadmin create repo
 REPO_URL="file://$(pwd)/repo"
 
-
+# Создаём структуру проекта
 cd repo
 svn mkdir -m "project structure" $REPO_URL/trunk $REPO_URL/branches
 cd ..
 
+# Создание рабочей копии
 svn checkout $REPO_URL/trunk/ wc
 cd wc
-# svn checkout file://$(pwd)/svn svn
-# mkdir repo
-# svn add repo
 
 # 0
 set_user "red" "red@mail.com"
