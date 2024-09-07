@@ -38,7 +38,7 @@ commit 0
 
 # 1
 set_user "blue" "blue@mail.com"
-svn copy . "branches/feat-1" -m "Create branch feat-1"
+svn copy $REPO_URL/trunk $REPO_URL/branches/feat-1 -m "Create branch feat-1"
 svn switch $REPO_URL/branches/feat-1
 commit 1 blue
 
@@ -46,12 +46,12 @@ commit 1 blue
 commit 2 blue
 
 # 3
-svn copy . "branches/feat-3" -m "Create branch feat-3"
+svn copy $REPO_URL/trunk $REPO_URL/branches/feat-3 -m "Create branch feat-3"
 svn switch $REPO_URL/branches/feat-3
 commit 3 blue
 
 # 4
-svn copy . "branches/feat-4" -m "Create branch feat-4"
+svn copy $REPO_URL/trunk $REPO_URL/branches/feat-4 -m "Create branch feat-4"
 svn switch $REPO_URL/branches/feat-4
 commit 4 blue
 
@@ -60,7 +60,7 @@ set_user "red" "red@mail.com"
 commit 5 red
 
 # 6
-svn copy . "branches/feat-6" -m "Create branch feat-6"
+svn copy $REPO_URL/trunk $REPO_URL/branches/feat-6 -m "Create branch feat-6"
 svn switch $REPO_URL/branches/feat-6
 commit 6 red
 
@@ -74,7 +74,7 @@ svn switch "trunk"
 commit 8 red
 
 # 9
-svn copy . "branches/feat-9" -m "Create branch feat-9"
+svn copy $REPO_URL/trunk $REPO_URL/branches/feat-9 -m "Create branch feat-9"
 svn switch $REPO_URL/branches/feat-9
 commit 9 red
 
@@ -108,7 +108,7 @@ commit 15 red
 
 # 16
 set_user "blue" "blue@mail.com"
-svn copy . "branches/feat-16" -m "Create branch feat-16"
+svn copy $REPO_URL/trunk $REPO_URL/branches/feat-16 -m "Create branch feat-16"
 svn switch $REPO_URL/branches/feat-16
 commit 16 blue
 
@@ -133,7 +133,7 @@ commit 17 blue
 
 # # 22
 # set_user "red" "red@mail.com"
-# svn copy . "branches/feat-22" -m "Create branch feat-22"
+# svn copy $REPO_URL/trunk $REPO_URL/branches/feat-22 -m "Create branch feat-22"
 # svn switch $REPO_URL/branches/feat-22
 # commit 22 red
 
