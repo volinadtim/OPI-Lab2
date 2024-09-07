@@ -8,16 +8,17 @@ set_user() {
 
 # Функция для коммита
 commit() {
+    rm -rf *
     svn rm *
-    unzip -oq ../commits/commit"$1".zip -d .
+    unzip -oq ../../commits/commit"$1".zip -d .
     svn add *
     svn commit -m "r$1" --username=$2
 }
 
 # Инициализация репозитория
+mkdir svn
+cd svn
 rm -rf repo
-# mkdir svn
-# cd svn
 svnadmin create repo
 REPO_URL="file://$(pwd)/repo"
 
