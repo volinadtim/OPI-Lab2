@@ -173,6 +173,8 @@ commit 29 red
 set_user "blue" "blue@mail.com"
 svn switch $REPO_URL/branches/feat-1
 svn merge $REPO_URL/branches/feat-22
+vim Lab4.java
+vim resolved
 commit 30 blue
 
 # 31
@@ -204,6 +206,8 @@ commit 35 blue
 set_user "red" "red@mail.com"
 svn switch $REPO_URL/trunk
 svn merge $REPO_URL/branches/feat-3
+vim Lab4.java
+vim resolved
 commit 36 red
 
 # Завершение
